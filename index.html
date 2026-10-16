@@ -1,27 +1,260 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sitio web de Valiosa Información 2000">
-  <title>Valiosa Información 2000</title>
+
+  <title>Valiosa Información 2000 | Artículos y análisis</title>
+
+  <meta name="description"
+        content="Valiosa Información 2000: publicaciones independientes, artículos de opinión y análisis sobre automovilismo y actualidad.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://trustdroid1930.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+        content="Valiosa Información 2000 | Artículos y análisis">
+  <meta property="og:description"
+        content="Consulta los artículos y análisis editoriales publicados por Valiosa Información 2000.">
+  <meta property="og:url"
+        content="https://trustdroid1930.github.io/">
+  <meta property="og:locale" content="es_ES">
+
+  <meta name="theme-color" content="#0f172a">
+
   <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, sans-serif; background: #0f172a; color: #f8fafc; }
-    header { padding: 24px; border-bottom: 1px solid #334155; font-weight: bold; }
-    main { min-height: 75vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 32px; }
-    h1 { font-size: clamp(32px, 6vw, 56px); color: #38bdf8; }
-    p { color: #cbd5e1; max-width: 600px; line-height: 1.7; }
-    footer { padding: 24px; text-align: center; color: #94a3b8; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #38bdf8;
+    }
+
+    a:hover {
+      color: #7dd3fc;
+    }
+
+    header {
+      padding: 24px;
+      border-bottom: 1px solid #334155;
+      font-weight: bold;
+      letter-spacing: .06em;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 70px 24px 90px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 0 70px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 56px);
+      color: #38bdf8;
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 16px;
+      color: #cbd5e1;
+    }
+
+    h2 {
+      font-size: clamp(24px, 4vw, 34px);
+      margin-bottom: 30px;
+    }
+
+    .articles {
+      border-top: 1px solid #334155;
+      padding-top: 45px;
+    }
+
+    .article-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 30px;
+      transition: border-color .2s ease;
+    }
+
+    .article-card:hover {
+      border-color: #38bdf8;
+    }
+
+    .category {
+      display: inline-block;
+      color: #7dd3fc;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    h3 {
+      font-size: clamp(22px, 3vw, 28px);
+      line-height: 1.3;
+      margin: 14px 0;
+    }
+
+    h3 a {
+      color: #f8fafc;
+      text-decoration: none;
+    }
+
+    h3 a:hover {
+      color: #38bdf8;
+    }
+
+    .article-card p {
+      color: #cbd5e1;
+      max-width: 750px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 11px 20px;
+      background: #0284c7;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .read-more:hover {
+      background: #0369a1;
+      color: white;
+    }
+
+    footer {
+      padding: 30px 24px;
+      text-align: center;
+      color: #94a3b8;
+      border-top: 1px solid #334155;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      main {
+        padding: 40px 18px 65px;
+      }
+
+      .hero {
+        padding: 25px 0 50px;
+      }
+
+      .article-card {
+        padding: 22px;
+      }
+    }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Valiosa Información 2000",
+    "url": "https://trustdroid1930.github.io/",
+    "inLanguage": "es",
+    "description": "Sitio de publicaciones y análisis editoriales independientes."
+  }
+  </script>
 </head>
+
 <body>
-  <header>VALIOSA INFORMACIÓN 2000</header>
+
+  <header>
+    VALIOSA INFORMACIÓN 2000
+  </header>
+
   <main>
-    <h1>Bienvenido a Valiosa Información 2000</h1>
-    <p>Estamos construyendo nuestro espacio digital.</p>
-    <p>Muy pronto encontrarás más información aquí.</p>
+
+    <section class="hero">
+      <h1>Valiosa Información 2000</h1>
+
+      <p>
+        Un espacio digital dedicado a publicaciones,
+        artículos de opinión y análisis independientes.
+      </p>
+
+      <p>
+        Exploramos noticias, acontecimientos y perspectivas
+        sobre automovilismo y otros temas de actualidad.
+      </p>
+    </section>
+
+    <section class="articles" aria-labelledby="articles-heading">
+
+      <h2 id="articles-heading">Artículos publicados</h2>
+
+      <article class="article-card">
+
+        <span class="category">
+          Automovilismo · Opinión editorial
+        </span>
+
+        <h3>
+          <a href="/alfonso_rustrian_ferrari-vs-bmw/">
+            Alfonso Rustrian debió ir a Ferrari y no a BMW
+          </a>
+        </h3>
+
+        <p class="article-meta">
+          Publicado:
+          <time datetime="2026-10-15">
+            15 de octubre de 2026
+          </time>
+        </p>
+
+        <p>
+          Análisis editorial sobre Ferrari, BMW y el
+          desarrollo de jóvenes pilotos, tomando como
+          referencia la noticia de Rafael Camara y
+          la Ferrari Driver Academy.
+        </p>
+
+        <a class="read-more"
+           href="/alfonso_rustrian_ferrari-vs-bmw/">
+          Leer artículo completo →
+        </a>
+
+      </article>
+
+    </section>
+
   </main>
-  <footer>© 2026 Valiosa Información 2000</footer>
+
+  <footer>
+    © 2026 Valiosa Información 2000 · Publicación editorial independiente
+  </footer>
+
 </body>
 </html>
